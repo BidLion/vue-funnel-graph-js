@@ -205,15 +205,15 @@ export default {
     },
     gradientAngle() {
       return `rotate(${this.gradientDirection === "vertical" ? 90 : 0})`;
-    },
-    getLinks(index){
-      return (typeof this.links[index] != `undefined` ? this.links[index] : '#');
     }
   },
   methods: {
     enterTransition(el, done) {
       if (!this.animated) done();
       setTimeout(() => done(), 700);
+    },
+    getLinks(index){
+      return (typeof this.links[index] != `undefined` ? this.links[index] : '#');
     },
     leaveTransition(el, done) {
       if (!this.animated) done();
