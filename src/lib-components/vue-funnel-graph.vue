@@ -26,7 +26,9 @@
             <div class="svg-funnel-js__label" :class="`label-${(index+1)}`"
                  v-for="(value, index) in valuesFormatted" :key="labels[index].toLowerCase().split(' ').join('-')"
             >
-                <div class="label__value">{{ value }}</div>
+                <a class="label_link" :href="`${links[index]}`">
+                  <div class="label__value">{{ value }}</div>
+                </a>
                 <div class="label__title" v-if="labels">{{ labels[index] }}</div>
                 <div class="label__percentage" v-if="displayPercentage && percentages()[index] !== 100">
                     {{ percentages()[index] }}%
@@ -77,6 +79,7 @@
             height: [String, Number],
             values: Array,
             labels: Array,
+            links: Array,
             colors: {
                 type: Array,
                 default() { return []; }
