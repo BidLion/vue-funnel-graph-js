@@ -107,15 +107,15 @@ var script = {
     },
     gradientAngle: function gradientAngle() {
       return ("rotate(" + (this.gradientDirection === "vertical" ? 90 : 0) + ")");
-    },
-    getLinks: function getLinks(index){
-      return (typeof this.links[index] != "undefined" ? this.links[index] : '#');
     }
   },
   methods: {
     enterTransition: function enterTransition(el, done) {
       if (!this.animated) { done(); }
       setTimeout(function () { return done(); }, 700);
+    },
+    getLinks: function getLinks(index){
+      return (typeof this.links[index] != "undefined" ? this.links[index] : '#');
     },
     leaveTransition: function leaveTransition(el, done) {
       if (!this.animated) { done(); }
@@ -388,11 +388,11 @@ var __vue_staticRenderFns__ = [];
   /* style */
   var __vue_inject_styles__ = function (inject) {
     if (!inject) { return }
-    inject("data-v-502f03c5_0", { source: ".appear-enter-active[data-v-502f03c5],.appear-leave-active[data-v-502f03c5]{transition:all .7s ease-in-out}.appear-enter-to[data-v-502f03c5],.appear-leave[data-v-502f03c5]{max-width:100%;max-height:100%;opacity:1}.appear-enter[data-v-502f03c5],.appear-leave-to[data-v-502f03c5]{max-width:0;max-height:0;opacity:0}.fade-enter-active[data-v-502f03c5],.fade-leave-active[data-v-502f03c5]{transition:all .3s ease}.fade-enter-to[data-v-502f03c5],.fade-leave[data-v-502f03c5]{opacity:1}.fade-enter[data-v-502f03c5],.fade-leave-to[data-v-502f03c5]{opacity:0}", map: undefined, media: undefined });
+    inject("data-v-46e88ee3_0", { source: ".appear-enter-active[data-v-46e88ee3],.appear-leave-active[data-v-46e88ee3]{transition:all .7s ease-in-out}.appear-enter-to[data-v-46e88ee3],.appear-leave[data-v-46e88ee3]{max-width:100%;max-height:100%;opacity:1}.appear-enter[data-v-46e88ee3],.appear-leave-to[data-v-46e88ee3]{max-width:0;max-height:0;opacity:0}.fade-enter-active[data-v-46e88ee3],.fade-leave-active[data-v-46e88ee3]{transition:all .3s ease}.fade-enter-to[data-v-46e88ee3],.fade-leave[data-v-46e88ee3]{opacity:1}.fade-enter[data-v-46e88ee3],.fade-leave-to[data-v-46e88ee3]{opacity:0}", map: undefined, media: undefined });
 
   };
   /* scoped */
-  var __vue_scope_id__ = "data-v-502f03c5";
+  var __vue_scope_id__ = "data-v-46e88ee3";
   /* module identifier */
   var __vue_module_identifier__ = undefined;
   /* functional template */
